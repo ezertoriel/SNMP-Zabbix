@@ -44,5 +44,8 @@ Tener servicio de SNMP en la red, un servidor DHCP que este dando direcciones IP
 
 <img width="554" height="295" alt="image" src="https://github.com/user-attachments/assets/86ccca1d-7c48-4ec0-b335-8012fdd6186e" />
 
+## Dispositivos conectados al Zabbix.
+
+<img width="1366" height="537" alt="image" src="https://github.com/user-attachments/assets/ce388837-51b7-4e45-be1e-ac0ed4d3fa5b" />
 
 
