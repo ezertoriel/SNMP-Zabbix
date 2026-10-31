@@ -16,9 +16,9 @@ Tener servicio de SNMP en la red, un servidor DHCP que este dando direcciones IP
 ---
 
 ## Dispositivos utilizados
-1. Router
+1. Router (DHCP)
 2. Switch
-3. Servidor (Active Directory, NPS)
+3. Servidor (SNMP)
 
 ---
 
@@ -27,4 +27,14 @@ Tener servicio de SNMP en la red, un servidor DHCP que este dando direcciones IP
 | :--- | :---: | ---: |
 | LAN | Router GIG0/0 | 10.8.63.1 |
 | LAN | Switch VLAN1 | 10.8.63.5 |
-| LAN | Server e0 | 10.8.63.10 |
+| LAN | Server e0 | DHCP |
+
+## SNMP Desde el servidor hacia el Router funcionando 
+<img width="740" height="399" alt="image" src="https://github.com/user-attachments/assets/c0014e19-f439-4d0e-b5cc-fa3d2606e860" />
+
+---
+## SNMP Desde el servidor hacia el Switch funcionando 
+<img width="677" height="196" alt="image" src="https://github.com/user-attachments/assets/5047cb05-0280-4916-a655-0968314ffe9c" />
+
+
+
