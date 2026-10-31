@@ -1,1 +1,34 @@
 enable
+configure terminal
+hostname R-SNMP
+no ip domain-lookup
+banner motd #Solo personal autorizado#
+enable secret Jimenez
+line console 0
+password Jimenez
+login
+exit
+line vty 0 4
+password Jimenez
+login
+exit
+
+interface fa0/0
+ip address 10.8.63.1 255.255.255.0
+description Conexion a LAN
+no shutdown
+exit
+
+ip dhcp excluded-address 10.8.63.1 10.8.63.10
+ip dhcp pool LAN-Red
+default-router 10.8.63.1
+network 10.8.63.0 255.255.255.0
+dns-server 8.8.8.8
+domain-name ezequiel.itla.edu.do
+exit
+
+snmp-server comumnity public ro 
+snmp-server location Zabbix
+end
+write memory
+copy running-config startup-config 
