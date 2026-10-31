@@ -1,2 +1,29 @@
 enable
 configure terminal
+hostname S-SNMP
+no ip domain-lookup
+banner motd #Solo personal autorizado#
+enable secret Jimenez
+line console 0
+password Jimenez
+login
+exit
+line vty 0 4
+password Jimenez
+login
+exit
+
+vlan 1
+name Administracion
+interface vlan 1
+ip address 10.8.63.5 255.255.255.0
+description Conexion a Red LAN-Red
+no shutdown
+exit
+
+ip default-gateway 10.8.63.1
+
+snmp-server community public RO
+end
+write memory 
+copy running-config startup-config
