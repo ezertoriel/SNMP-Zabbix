@@ -1,4 +1,6 @@
 # SNMP-Zabbix
+## Link del Video
+https://youtu.be/CqHNPLWo6LQ
 
 ## Propósito
 Tener servicio de SNMP en la red, un servidor DHCP que este dando direcciones IP a los dispositivos, y un servicio Zabbix para monitorear los dispositivos (Router y Switch). 
